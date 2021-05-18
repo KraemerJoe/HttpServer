@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Accueil - Réseau HTTP Server</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Accueil";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Réseau HTTP Server</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Accueil</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="structure.html">Structure du projet</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="utilisation.html">Utilisation générale</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="auth.html">Protéger un dossier</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="gzip.html">Bonus Ressources GZIP</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Réseau HTTP Server</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Accueil</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="projet-reseau-m1-miage-httpserver">Projet Réseau M1 MIAGE - HttpServer</h1>
+<p>Vous trouverez dans cette documentation toutes les informations liées au projet de réseau de M1 MIAGE.</p>
+<h1 id="presentation-licences">Présentation &amp; Licences</h1>
+<h2 id="presentation">Présentation</h2>
+<p>Dans le cadre de la matière Réseau il nous a été demandé d'écrire en Java un serveur web sachant gérer la requête GET.
+Plusieurs points nous ont été demandés et voici une liste de nos choix ainsi de ce qui a été effectué:</p>
+<ul>
+<li>Le projet est publié sur github</li>
+<li>Le projet présente un readme et une documentation (document actuel)</li>
+<li>Le serveur doit est écris en Java</li>
+<li>Ce projet n'utilise aucune librairies, il est fait uniquement à partir de la JRE</li>
+<li>Un dossier peut être protégé si on y trouve un .htpasswd</li>
+<li>Il utilise l'algorithme MD5 pour l'encryption des mots de passe du .htpasswd</li>
+<li>Le serveur sait exploiter la requête GET en HTTP/1.x</li>
+<li>Le serveur fonctionne correctement avec tous les sites demandés</li>
+<li>Le serveur gère proprement les erreurs</li>
+<li>Le serveur a un système de multithreading</li>
+<li>Le code a été documenté et rendu le plus possible capable d'être compris et maintenu</li>
+<li>A chaque appel, les requêtes apparaissent en console</li>
+<li>Un fichier properties externe vous permet de configurer : localisation des dossiers du serveur, numéro du port, nombre de threads</li>
+</ul>
+<p>Une fonctionnalité bonus a été implémentée:</p>
+<ul>
+<li>Les ressources sont compréssées en GZIP.</li>
+</ul>
+<h2 id="auteurs">Auteurs</h2>
+<p>Ce projet a été réalisé par les étudiants KRAEMER Joé et DUPONT Félix.
+Le projet a été encadré par notre professeur J. Bertrand.</p>
+<h2 id="licence">Licence</h2>
+<p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="License: CC BY-NC-ND 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" /></a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structure.html" class="btn btn-neutral float-right" title="Structure du projet">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="structure.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

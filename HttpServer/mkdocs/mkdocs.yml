@@ -1,0 +1,10 @@
+site_name: Réseau HTTP Server
+nav:
+    - Accueil: index.md
+    - Structure du projet: structure.md
+    - Installation : installation.md
+    - Utilisation générale : utilisation.md
+    - Protéger un dossier : auth.md
+    - Bonus Ressources GZIP : gzip.md
+theme: readthedocs
+use_directory_urls: false

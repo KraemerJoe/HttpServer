@@ -1,0 +1,11 @@
+fr\ul\miage\reseau\httpserver\server\ServerRessourceManager$Resource.class
+fr\ul\miage\reseau\httpserver\utils\WebTypeFileExtension.class
+fr\ul\miage\reseau\httpserver\managers\PropertiesManager.class
+fr\ul\miage\reseau\httpserver\utils\AuthCredentials.class
+fr\ul\miage\reseau\httpserver\utils\MD5Utils.class
+fr\ul\miage\reseau\httpserver\HttpServer.class
+fr\ul\miage\reseau\httpserver\server\ServerManager.class
+fr\ul\miage\reseau\httpserver\server\ServerRessourceManager.class
+fr\ul\miage\reseau\httpserver\server\ServerThreadShutdown.class
+fr\ul\miage\reseau\httpserver\constant\ExtensionsConvertor.class
+fr\ul\miage\reseau\httpserver\server\ServerManager$1.class

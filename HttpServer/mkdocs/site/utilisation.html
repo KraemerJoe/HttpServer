@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Utilisation générale - Réseau HTTP Server</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Utilisation g\u00e9n\u00e9rale";
+    var mkdocs_page_input_path = "utilisation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Réseau HTTP Server</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="structure.html">Structure du projet</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="utilisation.html">Utilisation générale</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#apercu">Aperçu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fichier-properties">Fichier properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#premier-acces-au-localhost">Premier accès au localhost</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#detail-des-requetes">Détail des requêtes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#remplir-le-dossier-du-serveur-web">Remplir le dossier du serveur web</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#indexhtml">index.html</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#dopetrope">Dopetrope</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#verti">Verti</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="auth.html">Protéger un dossier</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="gzip.html">Bonus Ressources GZIP</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Réseau HTTP Server</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Utilisation générale</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="guide-dutilisation">Guide d'utilisation</h1>
+<h2 id="apercu">Aperçu</h2>
+<p>Lorsque le serveur est correctement lancé, vous devriez avoir des informations similaire dans votre console.</p>
+<p><img alt="started" src="img/started.png" /></p>
+<h2 id="fichier-properties">Fichier properties</h2>
+<p>Lorsque vous lancez le serveur pour la première fois, un fichier de propriété est créer à la location que vous avez définit dans votre argument --properties.
+Il est de base remplie avec ces informations:</p>
+<p><img alt="properties" src="img/properties.png" /></p>
+<p>Description des propriétés:</p>
+<pre><code>1 - Nombre de threads concurrents maximums
+2 - Dossier dans lequel se trouve les fichiers de vos sites
+3 - Port du serveur
+</code></pre>
+<p>Une fois le serveur éteins, vous pouvez alors éditer les propriétés et relancer le serveur avec le même paramètre pour l'endroit des propriétés.</p>
+<h2 id="premier-acces-au-localhost">Premier accès au localhost</h2>
+<p>Lors de votre premier accès, si vous n'avez mis aucun fichier dans le dossier de votre serveur web, vous devriez tombé sur une erreur 404.</p>
+<p><img alt="404" src="img/404.png" /></p>
+<h3 id="detail-des-requetes">Détail des requêtes</h3>
+<p>Lorsque vous accéder à un site, vous aurez dans la console le retour des requêtes.</p>
+<p><img alt="req" src="img/req.png" /></p>
+<p>Vous pourrez voir :</p>
+<pre><code>- Le protocol
+- La méthode
+- L'ip de la personne
+- La ressource demandée
+- Le type de contenu (type web) demandé
+</code></pre>
+<h3 id="remplir-le-dossier-du-serveur-web">Remplir le dossier du serveur web</h3>
+<p>Prenons pour exemple les ressources fournies par le professeur pour ce projet.
+En retournant sur localhost:80 nous retrouverons ceci:</p>
+<h4 id="indexhtml">index.html</h4>
+<p><img alt="preview1" src="img/preview1.png" /></p>
+<p>Nous pouvons également aller dans les deux autres dossiers :</p>
+<h4 id="dopetrope">Dopetrope</h4>
+<p><img alt="preview2" src="img/preview2.png" /></p>
+<h4 id="verti">Verti</h4>
+<p><img alt="preview3" src="img/preview3.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="auth.html" class="btn btn-neutral float-right" title="Protéger un dossier">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="installation.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="auth.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
