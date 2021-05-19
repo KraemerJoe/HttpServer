@@ -29,7 +29,7 @@ Une fonctionnalité bonus a été implémentée:
 
 ## Auteurs
 
-Ce projet a été réalisé par les étudiants KRAEMER Joé et DUPONT Félix.
+Ce projet a été réalisé par les étudiants KRAEMER Joé, DUPONT Félix et HAMED Aichetou.
 Le projet a été encadré par notre professeur J. Bertrand.
 
 ## Licence
