@@ -170,7 +170,7 @@ Nous pouvons également aller dans les deux autres dossiers :
 
 ![preview3](https://github.com/KraemerJoe/HttpServer/blob/main/HttpServer/mkdocs/site/img/preview3.png)
 
-#Protéger un dossier
+# Protéger un dossier
 
 ## Fichier .htpasswd
 
@@ -197,7 +197,7 @@ Attention, le mot de passe demandé est celui qui n'est pas en MD5.
 
 ![auth](https://github.com/KraemerJoe/HttpServer/blob/main/HttpServer/mkdocs/site/img/auth.png)
 
-#Compression GZIP des ressources
+# Compression GZIP des ressources
 
 ## Fonctionnement du code
 
